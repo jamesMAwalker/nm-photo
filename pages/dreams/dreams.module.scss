@@ -1,0 +1,32 @@
+.grid {
+  padding: var(--grid-spacing);
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  // width: 80%;
+  // margin-left: 10%;
+  display: grid;
+  gap: var(--grid-spacing);
+  grid-template-columns: 1fr;
+  grid-auto-rows: 130vh;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8"
+    "c9"
+    "c10"
+    "c11"
+    "c12"
+    "c13"
+    "c14";
+}
+
+.cell {
+  min-height: 60vh;
+  // padding: 0vh 10vw;
+}

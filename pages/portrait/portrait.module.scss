@@ -1,0 +1,75 @@
+
+.grid {
+  padding: var(--grid-spacing);
+  height: auto;
+  min-height: 100vh;
+  display: grid;
+  // gap: var(--grid-spacing);
+  gap: 10px;
+  grid-template-columns: .55fr .45fr !important;
+  grid-auto-rows: 19vh;
+  grid-template-areas: 
+    "c1  c2"
+    "c1  c2"
+    "c1  c2"
+    "c1  c2"
+    "c1  c2"
+    "c1  c4"
+    "c3  c4"
+    "c3  c4"
+    "c3  c4"
+    "c3  c4"
+    "c3  c6"
+    "c3  c6"
+    "c5  c6"
+    "c5  c6"
+    "c5  c6"
+    "c5  c8"
+    "c5  c8"
+    "c5  c8"
+    "c7  c8"
+    "c7  c8"
+    "c7  c9"
+    "c7  c9"
+    "c7  c9"
+    "c7  c9"
+    "c7  c9"
+    "c10 c10"
+    "c10 c10"
+    "c10 c10"
+    "c10 c10"
+    "c10 c10"
+    "c11 c12"
+    "c11 c12"
+    "c11 c12"
+    "c11 c12"
+    "c11 c12"
+    "c11 c14"
+    "c13 c14"
+    "c13 c14"
+    "c13 c14"
+    "c13 c14"
+    "c13 c16"
+    "c13 c16"
+    "c15 c16"
+    "c15 c16"
+    "c15 c16"
+    "c15 c18"
+    "c15 c18"
+    "c15 c18"
+    "c17 c18"
+    "c17 c18"
+    "c17 c19"
+    "c17 c19"
+    "c17 c19"
+    "c17 c19"
+    "c17 c19"
+  ;
+}
+
+.cell {
+  background-color: var(--grey-40);
+  // min-height: 20vh;
+  height: 100%;
+  // width: 100%;
+}

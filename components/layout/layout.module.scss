@@ -1,0 +1,125 @@
+// stack order
+.layout {
+  isolation: isolate;
+  .nav {
+    z-index: 1;
+  }
+  .logo {
+    z-index: 1;
+  }
+  .bgImage {
+    z-index: -1;
+  }
+}
+
+.layout {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: var(--color-bg);
+  & > * {
+    color: var(--color-bg);
+  }
+}
+
+.layoutNavContainer {
+  position: fixed;
+  top: calc(var(--layout-margin) / 2);
+  left: calc(var(--layout-margin) / 2);
+  height: calc(100% - var(--layout-margin));
+  width: calc(100% - var(--layout-margin));
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-text);
+}
+
+.menuBtn {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -4vh;
+  padding: 1rem;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 2vh;
+    border-radius: var(--radius-rounded);
+    background-color: var(--color-text);
+    transition: var(--transition-primary);
+    &.closed {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+
+.menuOptions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.menuItem {
+  transform: rotate(90deg);
+  font-weight: var(--light);
+  letter-spacing: var(--push-lg);
+}
+
+.socialOptions {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialItem {
+  transform: scale(.8);
+  :first-child {
+    margin-top: 6vh;
+  }
+  :last-child {
+    margin-top: -6vh;
+  }
+}
+
+.pageLinks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pageLink {
+  padding: 0;
+  font-size: var(--text-md);
+  font-weight: var(--light) !important;
+  text-transform: uppercase;
+  color: var(--color-text);
+  letter-spacing: var(--push-lg);
+  &:first-child {
+    margin-right: 2vw;
+  }
+}
+
+.content {
+  min-height: 100vh;
+  width: 100vw;
+}

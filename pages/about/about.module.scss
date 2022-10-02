@@ -1,0 +1,65 @@
+.about {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blurbBlock {
+  height: 100vh;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blurb {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--color-text);
+  font-size: var(--text-prose-lg);
+  p {
+    display: flex;
+    flex-direction: column;
+  }
+  p span {
+    margin-bottom: 4vh;
+  }
+}
+.imgBlock {
+  position: relative;
+  width: 55%;
+  height: 100%;
+}
+.image {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain !important;
+    object-position: 10% 50%;
+    transition: var(--transition-primary);
+  }
+}
+.lattice {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0.65fr 0.35fr;
+  grid-template-columns: repeat(10, 0.1fr);
+  grid-template-areas:
+    "c1 c1 c1 c2 c2 c2 c2 c2 c2 c2"
+    "c3 c3 c3 c3 c3 c3 c3 c4 c4 c4";
+  border: 7px solid var(--color-bg);
+  transition: var(--transition-primary);
+  span {
+    height: 100%;
+    width: 100%;
+    border: 7px solid var(--color-bg);
+    transition: var(--transition-primary);
+    transition-duration: 2s !important;
+  }
+}

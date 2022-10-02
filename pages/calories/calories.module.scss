@@ -1,0 +1,36 @@
+.grid {
+  padding: var(--grid-spacing);
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  gap: var(--grid-spacing);
+  grid-template-columns: repeat(2, .55fr) repeat(2, .45fr);
+  grid-auto-rows: 60vh;
+  grid-template-areas:  
+    "c1   c1   c2   c2"
+    "c1   c1   c3   c3"
+    "c4   c5   c6   c6"
+    "c7   c7   c10  c10"
+    "c8   c8   c10  c10"
+    "c9   c9   c10  c10"
+    "c11  c11  c11  c11"
+    "c12  c12  c13  c13"
+    "c12  c12  c14  c14"
+    "c15  c15  c16  c16"
+    "c17  c17  c18  c19"
+    "c17  c17  c20  c20"
+    "c21  c21  c22  c22"
+    "c21  c21  c23  c24"
+    "c25  c25  c27  c27"
+    "c26  c26  c27  c27"
+    "c28  c28  c29  c29"
+    "c30  c31  c32  c32"
+    "c33  c33  c33  c33"
+  ; 
+}
+
+.cell {
+  background-color: var(--grey-40);
+  min-height: 60vh;
+}
